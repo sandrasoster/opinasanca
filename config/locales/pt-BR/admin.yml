@@ -1351,6 +1351,8 @@ pt-BR:
           status_draft: Rascunho
           status_published: Publicado
           title: Título
+    sugestion_assets:
+      title: Sugira 
     homepage:
       title: Página inicial
       description: Os módulos ativos aparecem na página inical na mesma ordem que aqui.

@@ -19,6 +19,9 @@ en:
       comment:
         one: "Comment"
         other: "Comments"
+      sugestion_assets:
+        one: "Sugira um bem"
+        other: "Sugira bens"
       debate:
         one: "Debate"
         other: "Debates"

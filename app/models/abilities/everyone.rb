@@ -7,6 +7,8 @@ module Abilities
       can [:read, :map, :summary, :share], Proposal
       can :read, Comment
       can :read, Poll
+      can :read, Tombamento
+      can :read, SugestionAsset
       can :results, Poll do |poll|
         poll.expired? && poll.results_enabled?
       end

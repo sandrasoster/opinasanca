@@ -291,7 +291,7 @@ a {
     margin-bottom: $line-height;
 
     a {
-      color: $text-medium;
+      color: $text;
       padding: 0;
 
       &.is-active {
@@ -443,7 +443,7 @@ a {
 // ----------
 
 header {
-  background: $brand;
+  background: #brand;
   border-bottom: 1px solid $border;
   margin-bottom: $line-height;
 
@@ -481,8 +481,8 @@ header {
 }
 
 .top-bar {
-  background: $brand !important;
-  color: #fff;
+  background: $white; 
+  color: $brand;
   padding-bottom: 0;
   padding-top: 0;
 
@@ -499,7 +499,7 @@ header {
     padding: 0;
 
     a {
-      color: #fff;
+      color: $brand;
       display: inline-block;
       font-family: 'Lato' !important;
       font-size: rem-calc(24);
@@ -531,7 +531,7 @@ header {
     }
 
     a {
-      color: #fff;
+      color: $brand;
       padding-left: 0;
 
       @include breakpoint(medium) {
@@ -545,8 +545,8 @@ header {
       text-align: left;
 
       @include breakpoint(medium) {
-        background: #fff;
-        color: $brand;
+        background: $brand;
+        color: $white;
         text-align: center;
       }
     }
@@ -602,8 +602,8 @@ header {
 
     &:hover::after,
     &::after {
-      background: #fff;
-      box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
+      background: $brand;
+      box-shadow: 0 7px 0 $brand, 0 14px 0 #fff;
     }
   }
 }
@@ -659,7 +659,7 @@ header {
 .subnavigation {
 
   @include breakpoint(medium) {
-    background: #fff;
+    background: $brand;
     padding-bottom: 0;
   }
 
@@ -671,12 +671,13 @@ header {
       @include breakpoint(medium) {
         display: inline-block;
         margin-right: rem-calc(20);
+        color: #fff
       }
     }
   }
 
   a {
-    color: #fff;
+    color: $brand;
     display: inline-block;
     line-height: $line-height * 2;
     position: relative;
@@ -684,28 +685,28 @@ header {
     width: 100%;
 
     @include breakpoint(medium) {
-      color: $text;
+      color: $text-menu;
       display: block;
       font-weight: bold;
       width: auto;
 
       &:hover {
-        color: $link;
+        color: #fff;
       }
     }
 
     &.is-active {
-      color: #fff;
+      color: $brand;
 
       @include breakpoint(medium) {
-        border-bottom: 2px solid $brand;
-        color: $brand;
+        border-bottom: 2px solid #fff;
+        color: #fff;
       }
     }
   }
 
   .input-group {
-    padding-top: $line-height / 4;
+    padding-top: $line-height / 2;
 
     @include breakpoint(medium) {
       margin-bottom: 0;
@@ -743,7 +744,6 @@ header {
 
   .is-active {
     font-weight: bold;
-    text-decoration: underline;
   }
 }
 
@@ -771,7 +771,7 @@ header {
 
   .is-active {
     border-bottom: 2px solid $brand;
-    color: $brand;
+    color: none;
 
     &:hover {
       text-decoration: none;
@@ -2686,7 +2686,7 @@ table {
 // -----------------
 
 .images .button {
-  margin-top: $line-height / 2;
+  margin-top: $line-height / 10;
 }
 
 // 23. Maps
@@ -2877,8 +2877,8 @@ table {
   }
 
   img {
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
   }
 
   figcaption {

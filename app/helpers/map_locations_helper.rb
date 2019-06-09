@@ -61,6 +61,7 @@ module MapLocationsHelper
       longitude_input_selector: "##{map_location_input_id(parent_class, 'longitude')}",
       zoom_input_selector: "##{map_location_input_id(parent_class, 'zoom')}",
       marker_investments_coordinates: investments_coordinates
+      
     }
     options[:marker_latitude] = map_location.latitude if map_location.latitude.present?
     options[:marker_longitude] = map_location.longitude if map_location.longitude.present?

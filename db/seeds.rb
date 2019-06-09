@@ -59,7 +59,7 @@ Setting["opendata_url"] = "/opendata"
 Setting["url"] = "http://example.com"
 
 # CONSUL installation's organization name
-Setting["org_name"] = "CONSUL"
+Setting["org_name"] = "OpinaSanca"
 
 # CONSUL installation place name (City, Country...)
 Setting["place_name"] = "CONSUL-land"
@@ -90,6 +90,11 @@ Setting['feature.map'] = nil
 Setting['feature.allow_images'] = true
 Setting['feature.allow_attached_documents'] = true
 Setting['feature.help_page'] = true
+
+# Custom feature flags
+Setting['feature.welcome'] = true
+Setting['feature.tombamentos'] = true
+Setting['feature.sugestion_assets'] = true
 
 # Spending proposals feature flags
 Setting['feature.spending_proposal_features.voting_allowed'] = nil
@@ -139,8 +144,11 @@ Setting['feature.homepage.widgets.feeds.processes'] = true
 # Votes hot_score configuration
 Setting['hot_score_period_in_days'] = 31
 
+# custom 
 WebSection.create(name: 'homepage')
 WebSection.create(name: 'debates')
 WebSection.create(name: 'proposals')
 WebSection.create(name: 'budgets')
+WebSection.create(name: 'tombamentos')
 WebSection.create(name: 'help_page')
+WebSection.create(name: 'sugetion_assets')

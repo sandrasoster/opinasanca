@@ -1,0 +1,15 @@
+<% provide :title do %><%= t("sugestion_assets.index.title") %><% end %>
+
+<% if has_banners? %>
+  <%= render "shared/banner" %>
+<% end %>
+
+<main>
+         <div class="map">
+                <h3><%= t("sugestion_assets.index.title") %></h3>
+                <%= render_map(@map_location, "Sugira um bem", false, nil, nil) %>
+               
+</div>
+         </div>
+</main>
+

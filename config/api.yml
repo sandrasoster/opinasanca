@@ -82,6 +82,14 @@ Vote:
     votable_type:      string
     public_created_at: string
     vote_flag:         boolean
+# Custom
+Tombamento:
+    fields:
+        id:                   integer
+        title:                string
+        description:          string
+    
+    
 # Organization:
 #   fields:
 #     id:               integer

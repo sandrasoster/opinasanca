@@ -18,7 +18,7 @@
 
 $admin-color:    #245b80;
 $sidebar:        #245b80;
-$sidebar-hover:  #25597c;
+$sidebar-hover:  $brand;
 $sidebar-active: #f4fcd0;
 
 .admin {
@@ -53,7 +53,7 @@ $sidebar-active: #f4fcd0;
   }
 
   .admin-top-bar {
-    background: #fff;
+    background: $brand;
   }
 
   .top-bar {
@@ -415,7 +415,7 @@ $sidebar-active: #f4fcd0;
 
     &:hover {
       background: $sidebar-hover;
-      color: #fff;
+      color: $brand;
       text-decoration: none;
     }
   }

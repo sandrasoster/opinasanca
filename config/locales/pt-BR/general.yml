@@ -74,6 +74,9 @@ pt-BR:
     comments_title: Comentários
     reply_button: Publicar resposta
     reply_link: Responder
+  sugestion_assets:
+    index:
+      sugestion_assets_title: sugira
   debates:
     create:
       form:
@@ -202,7 +205,7 @@ pt-BR:
     footer:
       accessibility: Acessibilidade
       conditions: Termos e condições de uso
-      consul: Aplicativo Consul
+      consul: Aplicativo opinaSanca
       consul_url: https://github.com/consul/consul
       contact_us: Para suporte técnico entre em
       copyright: Consul, %{year}
@@ -234,12 +237,14 @@ pt-BR:
       poll_questions: Votação
       budgets: Orçamento participativo
       spending_proposals: Propostas de despesas
+      sugestion_assets: Sugira
       notification_item:
         new_notifications:
           one: Você possui uma nova notificação
           other: Você possui %{count} novas notificações
         notifications: Notificações
         no_notifications: "Você não possui novas notificações"
+      welcome: Bem-vindo
     admin:
       watch_form_message: 'Você possui alterações não salvas. Tem certeza que deseja sair da página?'
   legacy_legislation:
@@ -398,6 +403,10 @@ pt-BR:
       start_new: Criar nova proposta
     notice:
       retired: Proposta retirada
+    sugestion_assets:
+      index:
+        section_header:
+          title: Sugira
     proposal:
       created: "Você criou uma proposta!"
       share:

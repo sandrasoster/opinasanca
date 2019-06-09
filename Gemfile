@@ -2,6 +2,22 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.11'
 
+# custom
+
+# Only linux:
+# gem 'unicorn', '~> 5.4.1'
+# gem 'pg', '~> 0.21.0'
+# In Windowns, instead use this
+ platforms :ruby do 
+ gem 'unicorn', '~> 5.4.1'
+ end
+ gem 'tzinfo-data'
+ gem 'pg', '0.20.0'
+
+# end custom
+
+# Get de version two
+gem 'aws-sdk', '~> 2'
 gem 'acts-as-taggable-on', '~> 5.0.0'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'ahoy_matey', '~> 1.6.0'
@@ -34,9 +50,8 @@ gem 'omniauth', '~> 1.8.1'
 gem 'omniauth-facebook', '~> 4.0.0'
 gem 'omniauth-google-oauth2', '~> 0.4.0'
 gem 'omniauth-twitter', '~> 1.4.0'
-gem 'paperclip', '~> 5.2.1'
+gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
 gem 'paranoia', '~> 2.4.1'
-gem 'pg', '~> 0.21.0'
 gem 'pg_search', '~> 2.0.1'
 gem 'redcarpet', '~> 3.4.0'
 gem 'responders', '~> 2.4.0'
@@ -50,7 +65,6 @@ gem 'sprockets', '~> 3.7.2'
 gem 'turbolinks', '~> 2.5.3'
 gem 'turnout', '~> 2.4.0'
 gem 'uglifier', '~> 4.1.19'
-gem 'unicorn', '~> 5.4.1'
 gem 'whenever', '~> 0.10.0', require: false
 gem 'globalize', '~> 5.0.0'
 gem 'globalize-accessors', '~> 0.2.1'

@@ -1,0 +1,2 @@
+module OfficialGoodsHelper
+end

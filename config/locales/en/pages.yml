@@ -13,7 +13,14 @@ en:
         budgets: "Participatory budgets"
         polls: "Polls"
         other: "Other information of interest"
+        sugestion_assets: "Sugestion Assets"
         processes: "Processes"
+        tombamentos: "Tombamentos"
+      tombamentos:
+        title: "Tombamentos"
+        description: "Tombementos"
+      sugestion_assets: 
+         title: "Debats"
       debates:
         title: "Debates"
         description: "In the %{link} section you can present and share your opinion with other people on issues of concern to you related to the city. It is also a place to generate ideas that through the other sections of %{org} lead to concrete actions by the City Council."

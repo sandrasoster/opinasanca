@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 
+  # custom
+  draw :tombamento
+  draw :sugestion_asset
   draw :account
   draw :admin
   draw :annotation
@@ -48,6 +51,7 @@ Rails.application.routes.draw do
   get 'help/faq',         to: 'pages#show', id: 'help/faq/index',         as: 'faq'
 
   # Static pages
-  get '/blog' => redirect("http://blog.consul/")
+  get '/blog' => redirect("http://www.promemoria.saocarlos.sp.gov.br/index.php?option=com_content&view=category&id=8&Itemid=101&limitstart=10")
   resources :pages, path: '/', only: [:show]
+
 end

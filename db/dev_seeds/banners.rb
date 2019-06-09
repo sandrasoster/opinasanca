@@ -24,5 +24,6 @@ section "Creating web sections" do
   WebSection.create(name: 'debates')
   WebSection.create(name: 'proposals')
   WebSection.create(name: 'budgets')
+  WebSection.create(name: 'sugestion_assets')
   WebSection.create(name: 'help_page')
 end

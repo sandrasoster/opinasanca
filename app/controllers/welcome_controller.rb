@@ -1,6 +1,9 @@
 class WelcomeController < ApplicationController
+  include FeatureFlags
   skip_authorization_check
   before_action :set_user_recommendations, only: :index, if: :current_user
+
+  feature_flag :welcome
 
   layout "devise", only: [:welcome, :verification]
 

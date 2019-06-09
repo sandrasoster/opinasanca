@@ -19,10 +19,24 @@ namespace :settings do
     Setting['feature.user.recommendations_on_debates'] = true
     Setting['feature.user.recommendations_on_proposals'] = true
   end
+  desc "Enable Welcome"
+  task enable_welcome: :environment do
+    Setting['feature.welcome'] = true
+  end
 
   desc "Enable Help page"
   task enable_help_page: :environment do
     Setting['feature.help_page'] = true
+  end
+
+  desc "Enable Tombamentos"
+  task enable_tombamentos: :environment do
+    Setting['feature.tombamentos'] = true
+  end
+
+  desc "Enable Sugestion assets"
+  task enable_sugestion_assets: :environment do
+    Setting['feature.sugestion_assets'] = true
   end
 
   desc "Enable Featured proposals"

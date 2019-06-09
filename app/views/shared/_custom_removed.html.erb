@@ -1,0 +1,39 @@
+<!-- subnavigaation -->
+
+   <!--
+    <% if feature?(:proposals) %>
+      <li>
+        <%= layout_menu_link_to t("layouts.header.proposals"),
+                                proposals_path,
+                                controller.class == ProposalsController,
+                                accesskey: "2",
+                                title: t("shared.go_to_page") + t("layouts.header.proposals") %>
+      </li>
+    -->
+<!--
+    <% if feature?(:legislation) %>
+      <li>
+        <%= layout_menu_link_to t("layouts.header.collaborative_legislation"),
+                                legislation_processes_path,
+                                controller.class.parent == Legislation,
+                                accesskey: "5" %>
+      </li>
+    <% end %>
+    <% if feature?(:spending_proposals) %>
+      <li>
+        <%= layout_menu_link_to t("layouts.header.spending_proposals"),
+                                  spending_proposals_path,
+                                  controller_name == 'spending_proposals',
+                                  accesskey: "5" %>
+      </li>
+    <% end %>
+    <% if feature?(:budgets) %>
+      <li>
+        <%= layout_menu_link_to t("layouts.header.budgets"),
+                                  budgets_path,
+                                  controller_name == "budgets" || controller_name == "investments",
+                                  accesskey: "6",
+                                  title: t("shared.go_to_page") + t("layouts.header.budgets") %>
+      </li>
+    <% end %>
+    -->

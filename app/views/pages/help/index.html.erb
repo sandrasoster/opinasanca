@@ -40,12 +40,16 @@
       <% if feature?(:legislation) %>
         <%= render "pages/help/processes" %>
       <% end %>
+      
+      <% if feature?(:tombamentos) %>
+        <%= render "pages/help/tombamentos" %>
+      <% end %>
+
     </div>
     <div class="small-12 medium-4 large-3 column more-info-sidebar">
       <%= render "pages/help/sidebar" %>
     </div>
   </div>
-
   <div class="row">
     <hr>
     <div class="small-12 column">

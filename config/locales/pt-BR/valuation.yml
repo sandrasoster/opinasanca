@@ -76,6 +76,11 @@ pt-BR:
         valuate: "Dossiê atualizado"
       valuation_comments: Comentários de avaliação
       not_in_valuating_phase: Investimentos só podem ser avaliados quando o Orçamento estiver na fase de avaliação
+    
+    sugestion_assets:
+      index:
+        title: Sugirir
+
     spending_proposals:
       index:
         geozone_filter_all: Todas as zonas

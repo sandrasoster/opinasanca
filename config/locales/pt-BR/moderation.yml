@@ -69,6 +69,8 @@ pt-BR:
           created_at: Mais recentes
           flags: Mais sinalizado
         title: Propostas
+    sugestion_assets:
+      title: Sugira
     budget_investments:
       index:
         block_authors: Bloquear alterações

@@ -19,14 +19,14 @@ section "Creating Settings" do
 
   Setting.create(key: 'twitter_handle', value: '@consul_dev')
   Setting.create(key: 'twitter_hashtag', value: '#consul_dev')
-  Setting.create(key: 'facebook_handle', value: 'CONSUL')
-  Setting.create(key: 'youtube_handle', value: 'CONSUL')
-  Setting.create(key: 'telegram_handle', value: 'CONSUL')
-  Setting.create(key: 'instagram_handle', value: 'CONSUL')
+  Setting.create(key: 'facebook_handle', value: 'OpinaSanca')
+  Setting.create(key: 'youtube_handle', value: 'OpinaSanca')
+  Setting.create(key: 'telegram_handle', value: 'OpinaSanca')
+  Setting.create(key: 'instagram_handle', value: 'OpinaSanca')
   Setting.create(key: 'blog_url', value: '/blog')
   Setting.create(key: 'url', value: 'http://localhost:3000')
-  Setting.create(key: 'org_name', value: 'CONSUL')
-  Setting.create(key: 'place_name', value: 'City')
+  Setting.create(key: 'org_name', value: 'OpinaSanca')
+  Setting.create(key: 'place_name', value: 'São Carlos')
 
   Setting.create(key: 'feature.debates', value: "true")
   Setting.create(key: 'feature.proposals', value: "true")
@@ -51,6 +51,9 @@ section "Creating Settings" do
   Setting.create(key: 'feature.user.skip_verification', value: "true")
   Setting.create(key: 'feature.help_page', value: "true")
 
+# custom
+  #Setting.create(key: 'feature.sugestion_assets', value: "true")
+  
   Setting.create(key: 'per_page_code_head', value: "")
   Setting.create(key: 'per_page_code_body', value: "")
   Setting.create(key: 'comments_body_max_length', value: '1000')

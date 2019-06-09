@@ -10,6 +10,11 @@ module TagsHelper
       budget_investments_path(@budget, search: tag_name)
     when 'legislation/proposal'
       legislation_process_proposals_path(@process, search: tag_name)
+    # Custom nomads
+    when 'tombamento'
+      tombamentos_path(search: tag_name)
+    when 'sugestion_asset'
+      sugestion_assets_path(search: tag_name)
     else
       '#'
     end
@@ -26,6 +31,10 @@ module TagsHelper
       budget_investment_path(taggable.budget_id, taggable)
     when 'legislation/proposal'
       legislation_process_proposal_path(@process, taggable)
+    when 'tombamento'
+      tombamento_path(taggable)
+    when 'sugestion_asset'
+      sugestion_asset_path(search: tag_name)
     else
       '#'
     end

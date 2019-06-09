@@ -1,0 +1,27 @@
+<% provide :title do %><%= t("sugestion_assets.index.title") %><% end %>
+
+<% content_for :body_class, "home-page" %>
+
+<% if has_banners? %>
+  <%= render "shared/banner" %>
+<% end %>
+
+
+<main>
+  <h1 class="show-for-sr"><%=  %></h1>
+  <div class="row">
+    <div class="investment-projects-list small-12 medium-9 column">
+
+      <div class="small-12 search-results">
+        <%= content_tag(:h2, t("spending_proposals.index.unfeasible")) if params[:unfeasible].present? %>
+        <%= content_tag(:h2, t("spending_proposals.index.by_geozone", geozone: @geozone_name)) if @geozone_name.present? %>
+        <% if params[:search].present? %>
+          <h2>
+            <%= page_entries_info @spending_proposals %>
+            <%= t("spending_proposals.index.search_results", count: @spending_proposals.size, search_term: params[:search]) %>
+          </h2>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</main>

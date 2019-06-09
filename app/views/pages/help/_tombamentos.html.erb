@@ -1,0 +1,14 @@
+<div class="row section-content">
+  <div class="small-12 column">
+  	<h3 id="tombamentos" data-magellan-target="tombamentos">
+  		 <%= t("pages.help.tombamentos.title") %>
+  	</h3>
+    <p>
+            <%= t("pages.help.tombamentos.description",
+          org: setting['org_name'],
+          link: link_to(t("pages.help.tombamentos.link"),
+                              tombamento_path)).html_safe %>
+    </p>
+    </ul>
+  </div>
+</div>

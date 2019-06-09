@@ -1,0 +1,2 @@
+class OfficialGoodsController < ApplicationController
+end

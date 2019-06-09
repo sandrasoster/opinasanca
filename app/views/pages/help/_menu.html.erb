@@ -26,6 +26,11 @@
         <%= link_to t("pages.help.menu.processes"), "#processes", class: "button hollow expanded" %>
       </li>
       <% end %>
+      <% if feature?(:tombamentos) %>
+      <li>
+        <%= link_to t("pages.help.menu.tombamentos"), "#tombamentos", class: "button hollow expanded" %>
+      </li>
+      <% end %>
       <li>
         <%= link_to t("pages.help.menu.other"), "#other", class: "button hollow expanded" %>
       </li>
